@@ -1,0 +1,22 @@
+<app-project-form></app-project-form>
+<div class="flex flex-col space-y-4">
+    <div *ngFor="let project of projects" class="bg-gray-100 p-4">
+      <h5 class="card-title text-lg font-bold">{{project.title | titlecase}}</h5>
+      <div class="flex flex-col space-y-2">
+        <div class="font-bold">Description:</div>
+        <div>{{project.description}}</div>
+      </div>
+      <div class="flex flex-col space-y-2">
+        <div class="font-bold">Category:</div>
+        <div>{{project.category}}</div>
+      </div>
+      <div class="flex flex-col space-y-2">
+        <div class="font-bold">Date:</div>
+        <div>{{project.date}}</div>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <a href="#" class="btn btn-primary">Go somewhere</a> 
+    </div>
+  </div>
+  

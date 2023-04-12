@@ -1,0 +1,40 @@
+<nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a routerLink="/" class="font-bold text-white">
+            My Logo
+          </a>
+        </div>
+  
+        <!-- Navigation links -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a routerLink="/" routerLinkActive="text-white bg-green-600" [routerLinkActiveOptions]="{exact: true}" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a routerLink="/about" routerLinkActive="text-white bg-green-600" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+            <a routerLink="/projects" routerLinkActive="text-white bg-green-600" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+          </div>
+        </div>
+  
+        <!-- Hamburger button for mobile -->
+        <div class="-mr-2 flex md:hidden">
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out" aria-label="Menu" aria-expanded="false">
+            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, toggle classes with JS -->
+    <div class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 sm:px-3">
+        <a routerLink="/" routerLinkActive="text-white bg-green-600" [routerLinkActiveOptions]="{exact: true}" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a routerLink="/about" routerLinkActive="text-white bg-green-600" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a routerLink="/projects" routerLinkActive="text-white bg-green-600" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+      </div>
+    </div>
+  </nav>
+  
